@@ -1,0 +1,126 @@
+<div class="batt_men_container">
+  <div class="top-info">
+    <span class="icon battery-tagg">&#xE856;</span>
+    <p class="percentage">25%</p>
+    <p class="time-left">1 hour left</p>
+  </div>
+  <div class="modes-container">
+    <p class="mode-text">Power mode (Battery): Best performance</p>
+    <input
+      type="range"
+      name="power-mode"
+      id="power-mode"
+      value="3"
+      min="0"
+      max="3"
+    />
+    <div class="icon-modes">
+      <span class="icon dot-orgin">&#xEC0A;</span>
+      <span class="icon">&#xE945;</span>
+    </div>
+  </div>
+  <a href="#">Battery options</a>
+</div>
+
+<style>
+  .batt_men_container {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+
+    width: 400px;
+    height: 300px;
+    background-color: #222222;
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;
+    color: #fff;
+    user-select: none;
+
+    a {
+      margin-left: 5px;
+      text-decoration: none;
+    }
+  }
+  .top-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 5px;
+
+    span {
+      height: 100%;
+      font-size: 5rem;
+    }
+
+    p {
+      margin: 0;
+      align-self: center;
+      font-size: 1.5rem;
+    }
+
+    .percentage {
+      font-size: 3rem;
+      margin: 0 var(--margin-s);
+    }
+  }
+
+  .modes-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 5px;
+
+    .mode-text {
+      font-size: 1.2rem;
+    }
+
+    #power-mode {
+      -webkit-appearance: none;
+      color: #fff;
+      border-radius: 5px;
+
+      &::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        height: 8px;
+        width: 100%;
+      }
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 40px;
+        width: 15px;
+        border-radius: 15px;
+        background: #fff;
+        cursor: pointer;
+        transform: translateY(-15px);
+      }
+    }
+  }
+
+  .icon-modes {
+    margin-top: var(--margin-l);
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      position: relative;
+      font-size: 1.5rem;
+    }
+  }
+
+  .dot-orgin::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 10px;
+
+    height: 10px;
+    width: 2px;
+
+    background: #fff;
+    box-shadow:
+      120px 0 #fff,
+      245px 0 #fff,
+      370px 0 #fff;
+  }
+</style>

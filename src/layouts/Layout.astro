@@ -1,0 +1,48 @@
+---
+import "../styles/main.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Windows 10</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style>
+  :root {
+    /* Margin */
+    --margin-xxs: 0.25rem;
+    --margin-xs: 0.5rem;
+    --margin-s: 0.75rem;
+    --margin-m: 1rem;
+    --margin-l: 1.25rem;
+    --margin-xl: 1.75rem;
+    --margin-xxl: 2.5rem;
+  }
+  html,
+  body {
+    margin: 0;
+    width: 100vw;
+    height: calc(100vh - 40px);
+    background: url("https://mohamedelghandour.github.io/windows-10/img/windows_10.jpg");
+    background-size: cover;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    gap: 5px;
+  }
+</style>
