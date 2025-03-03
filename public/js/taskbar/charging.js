@@ -16,6 +16,7 @@ export function charge() {
     if (batteryfull){
         text = "\uE83F"
         time_left.style.display = "none"
+        time_left.textContent = "Full charge";
     }
 
     icons.forEach((icon) => {
