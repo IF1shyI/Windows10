@@ -1,0 +1,86 @@
+---
+import "../../../styles/file-explorer/fe-head.css";
+import "../../../styles/file-explorer/fe-shortcuts.css";
+---
+
+<div class="fe-wrapper">
+  <div class="fe-top-menu">
+    <div class="header">
+      <div class="h-r-icons">
+        <img src="./Windows10/img/taskbar/file-explorer.png" alt="" />
+        <div class="pipe">||</div>
+        <span class="icon">&#xE7C3;</span>
+        <span class="icon">&#xE8B7;</span>
+        <div class="pipe">||</div>
+        <p class="text">File explorer</p>
+      </div>
+      <div class="h-mfe">
+        <span class="icon">&#xE738;</span>
+        <span class="icon">&#xE71A;</span>
+        <span class="icon">&#xE711;</span>
+      </div>
+    </div>
+    <div class="fe-btns-wrapper">
+      <div class="fe-btn fe-active-btn">File</div>
+      <div class="fe-btn">Start</div>
+      <div class="fe-btn">Share</div>
+      <div class="fe-btn">Show</div>
+      <div class="right-icons">
+        <span class="icon qstm">&#xF142;</span>
+      </div>
+    </div>
+    <div class="fe-navigation-wrapper">
+      <span class="icon left-arrow fe-nav-arrow">&#xF0B0;</span>
+      <span class="icon right-arrow fe-nav-arrow">&#xF0AF;</span>
+      <span class="icon">&#xE752;</span>
+      <span class="icon up-arrow fe-nav-arrow">&#xF0AD;</span>
+      <div class="nav-location-container">
+        <span class="icon nav-star">&#xE735;</span>
+        <span class="icon">&#xF142;</span>
+        <input type="text" name="" id="" />
+        <span class="icon">&#xF142;</span>
+        <span class="icon nav-reload">&#xE72C;</span>
+      </div>
+    </div>
+  </div>
+  <div class="fe-shortcuts">
+    <ul class="fe-top-items">
+      <li class="shortcut-container">
+        <img class="shortcut-img" src="" />
+        <p class="shortcut-text">Quick access</p>
+      </li>
+
+      <li class="shortcut-container">
+        <img class="shortcut-img" src="" />
+        <p class="shortcut-text">OneDrive</p>
+      </li>
+
+      <li class="shortcut-container">
+        <img class="shortcut-img" src="" />
+        <p class="shortcut-text">This computer</p>
+      </li>
+
+      <li class="shortcut-container">
+        <img class="shortcut-img" src="" />
+        <p class="shortcut-text">Network</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="fe-content"></div>
+
+<style>
+  .fe-wrapper {
+    position: absolute;
+    width: 1000px;
+    aspect-ratio: 16/9;
+    background: hotpink;
+    display: grid;
+    grid-template-columns: 1fr 5.5fr;
+    grid-template-rows: 1fr 6fr;
+
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>

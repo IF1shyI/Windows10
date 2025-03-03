@@ -1,0 +1,146 @@
+.fe-top-menu {
+    background: black;
+    width: 100%;
+    grid-column: span 2;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    user-select: none;
+}
+
+.fe-shortcuts {
+    background: #191919;
+}
+
+.header {
+    background: #191919;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #fff;
+}
+
+.h-r-icons {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    color: gray;
+
+    * {
+        margin-right: 5px;
+    }
+
+    img {
+        height: 20px;
+    }
+
+    .text {
+        margin: 0;
+        color: #fff;
+    }
+}
+
+.h-mfe {
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+
+    .icon {
+        padding: 5px;
+
+        &:hover {
+            background: var(--gray-default);
+        }
+    }
+}
+
+.fe-btns-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #fff;
+    position: relative;
+
+    .fe-btn {
+        width: 50px;
+        padding: 2px;
+        text-align: center;
+        height: calc(100% - 4px);
+        user-select: none;
+
+        &:hover {
+            background: var(--gray-default);
+        }
+    }
+
+    .fe-active-btn {
+        background-color: blue;
+
+        &:hover {
+            background: blue;
+        }
+    }
+}
+
+.right-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .qstm {
+        background: #0069c5;
+        border-radius: 50%;
+        font-size: 1.2rem;
+    }
+}
+
+.fe-navigation-wrapper {
+    width: 100%;
+    background: #191919;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+
+    align-items: center;
+
+    .fe-nav-arrow {
+        margin-right: 10px;
+    }
+
+    .left-arrow {
+        margin-left: 10px;
+    }
+}
+
+.nav-location-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+
+    border: 1px solid #ffffff33;
+
+    input {
+        background: transparent;
+        border: none;
+        width: 90%;
+    }
+
+    .nav-star {
+        color: blue;
+    }
+
+    .nav-reload {
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+}
